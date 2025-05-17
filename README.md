@@ -1,74 +1,111 @@
-# Content Ops Starter
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeamBob HR</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      margin-top: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      color: #004080;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 0.5rem 0;
+    }
+    .cta-buttons a {
+      display: inline-block;
+      margin: 1rem 1rem 0 0;
+      padding: 0.75rem 1.5rem;
+      background-color: #004080;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #eee;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TeamBob HR</h1>
+    <p>Your People. Our Passion.</p>
+  </header>
 
-![Content Ops Starter](https://assets.stackbit.com/docs/content-ops-starter-thumb.png)
+  <section>
+    <h2>Welcome to TeamBob HR</h2>
+    <p>We’re not your typical HR consultants. We’re your partners in building better workplaces—where compliance meets compassion, and where business goals align with real people practices.</p>
+    <p>Whether you're scaling fast, refining your culture, or navigating complexity, we help you do it with clarity, confidence, and heart.</p>
+  </section>
 
-Netlify starter that's made for customization with a flexible content model, component library, [visual editing](https://docs.netlify.com/visual-editor/overview/) and [Git Content Source](https://docs.netlify.com/create/content-sources/git/).
+  <section>
+    <h2>What We Do</h2>
+    <ul>
+      <li><strong>Fractional HR Leadership:</strong> Executive-level HR guidance for growing organizations.</li>
+      <li><strong>People & Culture Strategy:</strong> Define values, foster culture, and implement meaningful programs.</li>
+      <li><strong>Compliance & HR Operations:</strong> Policies, handbooks, and safety practices that scale.</li>
+      <li><strong>Executive Coaching & Talent Advisory:</strong> Support leaders through growth and change.</li>
+    </ul>
+  </section>
 
-**⚡ View demo:** [https://content-ops-starter.netlify.app/](https://content-ops-starter.netlify.app/)
+  <section>
+    <h2>Why "TeamBob"?</h2>
+    <p>Because we show up like we’re on your team. Led by Bob Lehto—a seasoned HR executive with a knack for transforming operations into people-first workplaces—we bring practical know-how, smart systems, and a whole lot of humanity.</p>
+  </section>
 
-## Table of Contents
+  <section>
+    <h2>What Clients Say</h2>
+    <blockquote>
+      “TeamBob HR helped us go from HR chaos to clarity in just weeks. Bob’s warmth and expertise made all the difference.”<br>
+      — <strong>COO, ClimateTech Startup</strong>
+    </blockquote>
+    <blockquote>
+      “We needed an HR partner who <em>got</em> startups and could help us mature without losing our soul. TeamBob delivered.”<br>
+      — <strong>CEO, Fintech Company</strong>
+    </blockquote>
+  </section>
 
-- [Deploying to Netlify](#deploying-to-netlify)
-- [Develop with Netlify Visual Editor Locally](#develop-with-netlify-visual-editor-locally)
-- [Building for production](#building-for-production)
-- [Setting Up Algolia Search](#setting-up-algolia-search)
-- [Next Steps](#next-steps)
-- [Support](#support)
+  <section class="cta-buttons">
+    <h2>Let’s Work Together</h2>
+    <p>Ready to build a better people function? Schedule a free discovery call today.</p>
+    <a href="#">Book a Call</a>
+    <a href="mailto:hello@teambobhr.com">Email Bob</a>
+    <a href="https://www.instagram.com/safetybobsf" target="_blank">Follow @SafetyBobSF</a>
+  </section>
 
-## Deploying to Netlify
-
-If you click "Deploy to Netlify" button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/content-ops-starter)
-
-## Develop with Netlify Visual Editor Locally
-
-The typical development process is to begin by working locally. Clone this repository, then run `npm install` in its root directory.
-
-Run the Next.js development server:
-
-```txt
-cd content-ops-starter
-npm run dev
-```
-
-Install the [Netlify Visual Editor CLI](https://www.npmjs.com/package/@stackbit/cli). Then open a new terminal window in the same project directory and run the Netlify visual editor dev server:
-
-```txt
-npm install -g @stackbit/cli
-stackbit dev
-```
-
-This outputs your own Netlify visual editor URL. Open this, register, or sign in, and you will be directed to Netlify's visual editor for your new project.
-
-![Next.js Dev + Visual Editor Dev](https://assets.stackbit.com/docs/next-dev-stackbit-dev.png)
-
-## Building for production
-
-To build a static site for production, run the following command
-
-```shell
-npm run build
-```
-
-## Setting Up Algolia Search
-
-This starter includes Algolia search integration. To set it up:
-
-1. Create an [Algolia](https://www.algolia.com/) account
-2. Create a new application and index
-3. Set the following environment variables:
-   - `NEXT_PUBLIC_ALGOLIA_APP_ID` - Your Algolia application ID
-   - `NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY` - Your Algolia search-only API key
-   - `NEXT_PUBLIC_ALGOLIA_INDEX_NAME` - Your index name
-
-## Next Steps
-
-Here are a few suggestions on what to do next if you're new to Netlify visual editor:
-
-- Learn [Netlify visual editor overview](https://docs.netlify.com/visual-editor/visual-editing/)
-- Check [Netlify visual editor reference documentation](https://visual-editor-reference.netlify.com/)
-
-## Support
-
-If you get stuck along the way, get help in our [support forums](https://answers.netlify.com/).
+  <footer>
+    TeamBob HR | Based in San Francisco | Serving Clients Nationwide<br>
+    &copy; 2025 TeamBob HR. All rights reserved.<br>
+    <a href="#">LinkedIn</a> | <a href="#">Instagram</a> | <a href="#">Privacy Policy</a>
+  </footer>
+</body>
+</html>
